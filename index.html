@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Dra. I Made Ayu Adyani</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Partikel background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Kursor custom -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <nav>
+    <a href="#" class="nav-logo">Dra. Ayu.</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#journey">Perjalanan</a></li>
+      <li><a href="#gallery">Galeri</a></li>
+      <li><a href="#values">Nilai</a></li>
+      <li><a href="#team">Kelompok</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <!-- Tombol dark mode -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle dark mode">
+      <div class="theme-toggle-knob"><span class="theme-toggle-icon">☀️</span></div>
+    </button>
+  </nav>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-left fade-up">
+      <div class="hero-eyebrow">Guru PKn · SMK TI</div>
+
+      <!-- Nama utama -->
+      <h1 class="hero-name">Dra. I Made<br>Ayu <em>Adyani</em></h1>
+
+      <!-- Teks mengetik otomatis -->
+      <p class="hero-title">
+        <span id="typing-text"></span><span class="typing-cursor"></span>
+      </p>
+
+      <!-- Deskripsi singkat -->
+      <p class="hero-desc">
+        Lebih dari 18 tahun beliau mengabdikan diri dalam dunia pendidikan, membentuk karakter dan masa depan generasi muda melalui mata pelajaran Pendidikan Pancasila.</p>
+
+      <a href="#contact" class="btn-primary">
+        Hubungi Saya
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-right fade-up" style="transition-delay:0.15s">
+      <!-- Ganti dengan <img src="foto-bu-ayu.jpg"> jika ada foto -->
+      <div class="hero-photo">
+        <div class="photo-initials">Ayu<br>Adyani</div>
+        <div class="photo-badge">Guru PKn · 18 Tahun</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       STATS BAR
+  ══════════════════════════════ -->
+  <div class="stats-bar">
+    <div class="stat fade-up">
+      <div class="stat-number">18+</div>
+      <div class="stat-label">Tahun<br>Mengajar</div>
+    </div>
+    <div class="stat fade-up" style="transition-delay:0.1s">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">Siswa<br>Lulus</div>
+    </div>
+    <div class="stat fade-up" style="transition-delay:0.2s">
+      <div class="stat-number">PKn</div>
+      <div class="stat-label">Mata Pelajaran<br>Diajarkan</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       TENTANG SAYA
+  ══════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="fade-up">
+      <div class="section-label">Profil</div>
+      <h2 class="section-heading">Tentang<br><em>Saya</em></h2>
+    </div>
+
+    <div class="about-content fade-up" style="transition-delay:0.15s">
+      <p>
+      Dra. I Made Ayu Adyani lahir pada 11 Agustus 1967 di Karangasem, Bali, dari keluarga yang memiliki latar belakang kuat di bidang pendidikan. Ia tumbuh sebagai bagian dari lima bersaudara, salah satunya kini menjadi seorang dosen. Lingkungan keluarga tersebut membentuk dirinya menjadi pribadi yang menghargai ilmu pengetahuan sekaligus menjunjung tinggi kebersamaan. </p>
+      <p>
+       Perjalanan pendidikannya dimulai dan diselesaikan di Bandung, dari tingkat Sekolah Dasar hingga perguruan tinggi. Pengalaman merantau sejak usia muda membentuk karakter yang mandiri, tangguh, serta mampu beradaptasi dengan berbagai situasi. Nilai-nilai tersebut kemudian menjadi bagian penting dalam kehidupan pribadi maupun dalam metode pengajarannya.   </p>
+      <p>
+      Perjalanan menjadi seorang guru bermula dari saran seorang teman baik. Apa yang awalnya merupakan sebuah kesempatan, kemudian berkembang menjadi panggilan hidup yang dijalani dengan penuh dedikasi. Hingga kini, beliau telah mengabdi selama lebih dari 18 tahun sebagai guru Pendidikan Kewarganegaraan di SMK TI, sebuah perjalanan panjang yang penuh makna dan kebanggaan.   </p>
+      <div class="about-quote">
+        <blockquote>
+         "Fokuslah ke depan. Masa lalu cukup untuk dikenang, bukan untuk dibawa. Jadikan ia pelajaran, bukan beban." </blockquote>
+      </div>
+      <div class="tag-list">
+        <span class="tag">Pendidikan Kewarganegaraan</span>
+        <span class="tag">SMK TI</span>
+        <span class="tag">Karakter Bangsa</span>
+        <span class="tag">Adaptasi Kurikulum</span>
+        <span class="tag">Pembimbing Generasi Z</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PERJALANAN HIDUP
+  ══════════════════════════════ -->
+  <section class="journey" id="journey">
+    <div class="journey-header fade-up">
+      <div class="section-label">Rekam Jejak</div>
+      <h2 class="section-heading">Perjalanan <em>Hidup</em></h2>
+    </div>
+
+    <div class="journey-grid">
+
+
+      <!-- PENDIDIKAN -->
+<div class="fade-up">
+  <h3>🎓 Riwayat Pendidikan</h3>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Sekolah Dasar</div>
+        <div class="timeline-title">SD — Kelas 1 sampai 4 — Bali</div>
+        <div class="timeline-desc">Memulai pendidikan dasar di Bali, tumbuh dalam lingkungan keluarga yang hangat dan penuh semangat.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Sekolah Dasar</div>
+        <div class="timeline-title">SD — Kelas 5 sampai 6 — Bandung</div>
+        <div class="timeline-desc">Pindah ke Bandung, merantau sejak usia dini dan mulai belajar kemandirian serta ketangguhan.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Sekolah Menengah Pertama</div>
+        <div class="timeline-title">SMP — Bandung</div>
+        <div class="timeline-desc">Melanjutkan pendidikan di Bandung, mengembangkan minat dan bakat akademik.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Sekolah Menengah Atas</div>
+        <div class="timeline-title">SMA — Bandung</div>
+        <div class="timeline-desc">Memperdalam ilmu dan mempersiapkan diri menuju jenjang perguruan tinggi.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Perguruan Tinggi</div>
+        <div class="timeline-title">Dra. — Bandung</div>
+        <div class="timeline-desc">Menyelesaikan gelar Doktoranda di Bandung, memperkuat fondasi keilmuan sebagai pendidik profesional.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- KARIR -->
+<div class="fade-up" style="transition-delay:0.15s">
+  <h3>💼 Perjalanan Karir</h3>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Awal Karir</div>
+        <div class="timeline-title">Bergabung dengan SMK TI</div>
+        <div class="timeline-desc">Atas saran seorang teman baik, memulai karir sebagai guru PKn di SMK TI — langsung terjun mengajar dari hari pertama.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Tantangan Terbesar</div>
+        <div class="timeline-title">Beradaptasi dengan Siswa Baru</div>
+        <div class="timeline-desc">Menyesuaikan pendekatan mengajar dengan karakteristik unik setiap generasi siswa, terutama kelas 10 yang baru memasuki dunia SMK.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Pencapaian Terbesar</div>
+        <div class="timeline-title">Seluruh Siswa Lulus</div>
+        <div class="timeline-desc">Kebanggaan terbesar adalah menyaksikan seluruh siswa bimbingan dapat lulus dengan hasil yang baik.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div>
+        <div class="timeline-year">Hingga Kini</div>
+        <div class="timeline-title">18+ Tahun Mengabdi</div>
+        <div class="timeline-desc">Terus berkarya dan berdedikasi di SMK TI, menjadi inspirasi bagi ratusan siswa setiap tahunnya.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       GALERI FOTO
+  ══════════════════════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header fade-up">
+      <div class="section-label" style="justify-content:center">Dokumentasi</div>
+      <h2 class="section-heading" style="font-size:clamp(2rem,4vw,3rem)">Galeri <em>Foto</em></h2>
+      <p class="gallery-subtitle">Momen-momen berharga dalam perjalanan hidup dan karir Bu Ayu</p>
+    </div>
+    <div class="gallery-grid">
+
+      <!-- Foto 1 — ganti galeri1.jpg dengan nama file foto asli -->
+     <div class="gallery-img-wrap" onclick="openLightbox('image copy/foto-bu-ayu.jpg', 'Bersama Rekan Guru')">
+  <img src="image copy/foto-bu-ayu.jpg" alt="Bersama Rekan Guru" onerror="this.parentElement.classList.add('no-img')"/>
+  <div class="gallery-overlay"><span>Bersama Rekan Guru</span></div>
+  <div class="gallery-zoom">🔍</div>
+</div>
+
+      <!-- Foto 2 — ganti galeri2.jpg -->
+     <div class="gallery-img-wrap" onclick="openLightbox('.jpg', 'Bersama Rekan Guru')">
+  <img src="image copy/foto2.jpg" alt="Bersama Rekan Guru" onerror="this.parentElement.classList.add('no-img')"/>
+  <div class="gallery-overlay"><span>Bersama Rekan Guru</span></div>
+  <div class="gallery-zoom">🔍</div>
+</div>
+
+      <!-- Foto 3 — ganti galeri3.jpg -->
+     <div class="gallery-img-wrap" onclick="openLightbox('galeri1.jpg', 'Bersama Rekan Guru')">
+  <img src="image copy/" alt="Bersama Rekan Guru" onerror="this.parentElement.classList.add('no-img')"/>
+  <div class="gallery-overlay"><span>Bersama Rekan Guru</span></div>
+  <div class="gallery-zoom">🔍</div>
+</div>
+      <!-- Foto 4 — ganti galeri4.jpg -->
+     <div class="gallery-img-wrap" onclick="openLightbox('galeri1.jpg', 'Bersama Rekan Guru')">
+  <img src="image copy/" alt="Bersama Rekan Guru" onerror="this.parentElement.classList.add('no-img')"/>
+  <div class="gallery-overlay"><span>Bersama Rekan Guru</span></div>
+  <div class="gallery-zoom">🔍</div>
+</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       NILAI / VALUES
+  ══════════════════════════════ -->
+  <section class="values" id="values">
+    <div class="values-header fade-up">
+      <div class="section-label" style="justify-content:center">Prinsip</div>
+      <h2 class="section-heading" style="font-size:clamp(2rem,4vw,3rem)">Nilai yang Saya <em>Pegang</em></h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card fade-up">
+        <div class="value-icon">🎯</div>
+        <div class="value-title">Fokus ke Depan</div>
+        <p class="value-text">Masa lalu cukup untuk dikenang, bukan untuk dibawa. Pandanglah selalu ke depan dengan tekad dan optimisme yang kokoh.</p>
+      </div>
+      <div class="value-card fade-up" style="transition-delay:0.1s">
+        <div class="value-icon">🌱</div>
+        <div class="value-title">Beradaptasi & Bertumbuh</div>
+        <p class="value-text">Setiap generasi siswa membawa warna baru. Kemampuan beradaptasi adalah kunci seorang guru yang terus relevan dan berdampak.</p>
+      </div>
+      <div class="value-card fade-up" style="transition-delay:0.2s">
+        <div class="value-icon">🏆</div>
+        <div class="value-title">Keberhasilan Bersama</div>
+        <p class="value-text">Kebanggaan sejati bukan tentang penghargaan pribadi, melainkan saat menyaksikan setiap murid berhasil meraih tujuan mereka.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PESAN UNTUK GENERASI MUDA
+  ══════════════════════════════ -->
+  <section class="message-section">
+    <div class="message-label fade-up">Pesan untuk Generasi Muda</div>
+    <p class="message-quote fade-up" style="transition-delay:0.1s">
+      "Belajarlah dengan sungguh-sungguh, karena inilah saatnya. Sebagai generasi muda,
+      kesempatan ada di hadapan kalian — gunakanlah sepenuh hati untuk mengejar
+      dan mewujudkan cita-cita yang kalian impikan."
+    </p>
+    <div class="message-author fade-up" style="transition-delay:0.2s">— Dra. I Made Ayu Adyani</div>
+  </section>
+
+  <!-- ══════════════════════════════
+       KELOMPOK — ORG CHART
+  ══════════════════════════════ -->
+  <section class="team" id="team">
+    <div class="team-header fade-up">
+      <div class="section-label" style="justify-content:center">Tim Pewawancara</div>
+      <h2 class="section-heading" style="font-size:clamp(2rem,4vw,3rem)">Kelompok <em>Kami</em></h2>
+      <p class="team-subtitle">Siswa SMK TI yang menyusun portfolio ini dengan penuh semangat</p>
+    </div>
+
+    <div class="org-chart fade-up">
+
+      <!-- LEVEL 1: Ketua -->
+      <div class="org-level org-level-1">
+        <div class="org-card" data-member="1">
+          <div class="org-avatar">A</div>
+          <div class="org-name">Nama Anggota 1</div>
+          <div class="org-role">Ketua</div>
+        </div>
+      </div>
+
+      <div class="org-connector-v"></div>
+
+      <!-- LEVEL 2: Sekretaris -->
+      <div class="org-level org-level-2">
+        <div class="org-card" data-member="2">
+          <div class="org-avatar">B</div>
+          <div class="org-name">Nama Anggota 2</div>
+          <div class="org-role">Sekretaris</div>
+        </div>
+      </div>
+
+      <div class="org-connector-v"></div>
+
+      <!-- LEVEL 3: 2 Pewawancara -->
+      <div class="org-level org-level-3">
+        <div class="org-branch">
+          <div class="org-connector-h"></div>
+          <div class="org-branch-nodes">
+            <div class="org-branch-item">
+              <div class="org-connector-down"></div>
+              <div class="org-card" data-member="3">
+                <div class="org-avatar">C</div>
+                <div class="org-name">Nama Anggota 3</div>
+                <div class="org-role">Pewawancara</div>
+              </div>
+            </div>
+            <div class="org-branch-item">
+              <div class="org-connector-down"></div>
+              <div class="org-card" data-member="4">
+                <div class="org-avatar">D</div>
+                <div class="org-name">Nama Anggota 4</div>
+                <div class="org-role">Pewawancara</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="org-connector-v"></div>
+
+      <!-- LEVEL 4: 2 Dokumentasi + 1 Editor -->
+      <div class="org-level org-level-4">
+        <div class="org-branch">
+          <div class="org-connector-h org-connector-h--wide"></div>
+          <div class="org-branch-nodes">
+            <div class="org-branch-item">
+              <div class="org-connector-down"></div>
+              <div class="org-card" data-member="5">
+                <div class="org-avatar">E</div>
+                <div class="org-name">Nama Anggota 5</div>
+                <div class="org-role">Dokumentasi</div>
+              </div>
+            </div>
+            <div class="org-branch-item">
+              <div class="org-connector-down"></div>
+              <div class="org-card" data-member="6">
+                <div class="org-avatar">F</div>
+                <div class="org-name">Nama Anggota 6</div>
+                <div class="org-role">Dokumentasi</div>
+              </div>
+            </div>
+            <div class="org-branch-item">
+              <div class="org-connector-down"></div>
+              <div class="org-card" data-member="7">
+                <div class="org-avatar">G</div>
+                <div class="org-name">Nama Anggota 7</div>
+                <div class="org-role">Editor Web</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end org-chart -->
+  </section>
+
+  <!-- ══════════════════════════════
+       POPUP DETAIL ANGGOTA
+  ══════════════════════════════ -->
+  <div class="member-overlay" id="memberOverlay"></div>
+  <div class="member-popup" id="memberPopup">
+    <button class="popup-close" id="popupClose">✕</button>
+    <div class="popup-header">
+      <div class="popup-avatar" id="popupAvatar"></div>
+      <div>
+        <div class="popup-number" id="popupNumber"></div>
+        <div class="popup-name" id="popupName"></div>
+        <div class="popup-role" id="popupRole"></div>
+      </div>
+    </div>
+    <div class="popup-body">
+      <div class="popup-section">
+        <div class="popup-section-title">📋 Tugas & Tanggung Jawab</div>
+        <div class="popup-section-content" id="popupTugas"></div>
+      </div>
+      <div class="popup-section">
+        <div class="popup-section-title">✨ Kontribusi dalam Project</div>
+        <div class="popup-section-content" id="popupKontribusi"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════
+       KONTAK
+  ══════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="contact-info fade-up">
+      <div class="section-label">Kontak</div>
+      <h2>Mari Kita <em>Terhubung</em></h2>
+      <p>Saya terbuka untuk diskusi, kolaborasi pendidikan, atau sekadar berbagi cerita dan pengalaman mengajar bersama.</p>
+      <div class="contact-links">
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6281234567891" target="_blank" class="contact-link">
+          <div class="contact-link-icon contact-icon-wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.136.565 4.14 1.54 5.875L.057 23.97l6.265-1.468A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.796 9.796 0 01-5.031-1.387l-.36-.214-3.724.873.936-3.619-.235-.372A9.778 9.778 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          </div>
+          <div>
+            <div class="contact-link-label">WhatsApp</div>
+            <div class="contact-link-value">+62 812-3456-7891</div>
+          </div>
+        </a>
+
+        <!-- Email -->
+        <a href="/cdn-cgi/l/email-protection#40213935212439212e296e302b2e00272d21292c6e232f2d" class="contact-link">
+          <div class="contact-link-icon contact-icon-email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </div>
+          <div>
+            <div class="contact-link-label">Email</div>
+            <div class="contact-link-value"><span class="__cf_email__" data-cfemail="c3a2bab6a2a7baa2adaaedb3a8ad83a4aea2aaafeda0acae">[email&#160;protected]</span></div>
+          </div>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://instagram.com/dra.ayuadyani" target="_blank" class="contact-link">
+          <div class="contact-link-icon contact-icon-ig">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+          <div>
+            <div class="contact-link-label">Instagram</div>
+            <div class="contact-link-value">@dra.ayuadyani</div>
+          </div>
+        </a>
+
+        <!-- Lokasi -->
+        <div class="contact-link">
+          <div class="contact-link-icon contact-icon-loc">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg>
+          </div>
+          <div>
+            <div class="contact-link-label">Lokasi</div>
+            <div class="contact-link-value">Karangasem, Bali — Indonesia</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="contact-form fade-up" style="transition-delay:0.15s">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text" placeholder="Nama Anda"/>
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="email@anda.com"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Subjek</label>
+        <input type="text" placeholder="Perihal pesan Anda"/>
+      </div>
+      <div class="form-group">
+        <label>Pesan</label>
+        <textarea placeholder="Tulis pesan Anda di sini..."></textarea>
+      </div>
+      <button class="btn-submit">Kirim Pesan →</button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <div>© 2025 <span>Dra. I Made Ayu Adyani</span> — Guru PKn SMK TI</div>
+    <div>Mengabdi dengan ❤ selama 18+ tahun</div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+
+<div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt=""/>
+  <div class="lightbox-caption" id="lightboxCaption"></div>
+</div>
+
+
+</body>
+</html>

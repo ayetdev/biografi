@@ -318,7 +318,7 @@ setTimeout(() => {
 // ── STAT COUNT-UP ──
 const statData = [
   { el: document.querySelectorAll('.stat-number')[0], target: 18,  suffix: '+', isNum: true  },
-  { el: document.querySelectorAll('.stat-number')[1], target: 100, suffix: '%', isNum: true  },
+  { el: document.querySelectorAll('.stat-number')[1], target: 99, suffix: '%', isNum: true  },
   { el: document.querySelectorAll('.stat-number')[2], target: null, suffix: '', isNum: false }
 ];
 

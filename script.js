@@ -4,13 +4,13 @@
    ================================================ */
 
 // ── DATA ANGGOTA KELOMPOK ──
-// Ganti nama, tugas, dan kontribusi sesuai data asli
+
 
 const memberData = {
   1: {
     nomor: '01',
     inisial: 'A',
-    nama: 'Nama Anggota 1',
+    nama: 'I kadek gery priwana nugraha',
     jabatan: 'Ketua',
     tugas: [
       'Memimpin dan mengkoordinasi seluruh kegiatan kelompok',
@@ -29,25 +29,25 @@ const memberData = {
   2: {
     nomor: '02',
     inisial: 'B',
-    nama: 'Nama Anggota 2',
-    jabatan: 'Sekretaris',
-    tugas: [
-      'Mencatat dan mendokumentasikan semua hasil rapat kelompok',
-      'Menyusun daftar pertanyaan wawancara secara tertulis',
-      'Merekap jawaban hasil wawancara menjadi teks terstruktur',
-      'Menyimpan dan mengelola semua berkas dan dokumen kelompok'
+    nama: 'Ni Putu Aristyawati',
+    jabatan: 'pewawancara',
+  tugas: [
+      'Melakukan wawancara langsung kepada narasumber (Bu Ayu)',
+      'Mengajukan pertanyaan dengan sopan dan profesional',
+      'Menggali informasi lebih dalam dari setiap jawaban',
+      'Menjaga suasana wawancara agar nyaman dan kondusif'
     ],
     kontribusi: [
-      'Menyusun 12 pertanyaan wawancara yang komprehensif',
-      'Mentranskrip hasil rekaman wawancara secara lengkap',
-      'Menulis ulang narasi profil Bu Ayu agar enak dibaca',
-      'Membantu proofreading teks di portfolio'
+      'Berhasil menggali cerita perjalanan hidup Bu Ayu secara mendalam',
+      'Mengajukan pertanyaan spontan berdasarkan jawaban Bu Ayu',
+      'Membantu menenangkan suasana saat wawancara berlangsung',
+      'Merekam jalannya wawancara sebagai backup dokumentasi'
     ]
   },
   3: {
     nomor: '03',
     inisial: 'C',
-    nama: 'Nama Anggota 3',
+    nama: 'Marvin Sondang Sidabutar',
     jabatan: 'Pewawancara',
     tugas: [
       'Melakukan wawancara langsung kepada narasumber (Bu Ayu)',
@@ -65,25 +65,7 @@ const memberData = {
   4: {
     nomor: '04',
     inisial: 'D',
-    nama: 'Nama Anggota 4',
-    jabatan: 'Pewawancara',
-    tugas: [
-      'Melakukan wawancara langsung kepada narasumber (Bu Ayu)',
-      'Membantu mengajukan pertanyaan lanjutan yang relevan',
-      'Memastikan semua topik pertanyaan terjawab dengan baik',
-      'Berkoordinasi dengan pewawancara pertama'
-    ],
-    kontribusi: [
-      'Menggali informasi tentang filosofi dan motivasi Bu Ayu',
-      'Mengajukan pertanyaan tentang tantangan dan pencapaian karir',
-      'Membantu menciptakan suasana wawancara yang hangat',
-      'Memberikan umpan balik positif kepada narasumber'
-    ]
-  },
-  5: {
-    nomor: '05',
-    inisial: 'E',
-    nama: 'Nama Anggota 5',
+    nama: 'Danadyaksa Arfa Mananta',
     jabatan: 'Dokumentasi',
     tugas: [
       'Merekam jalannya wawancara menggunakan perangkat audio/video',
@@ -98,28 +80,46 @@ const memberData = {
       'Membantu menyiapkan peralatan dokumentasi'
     ]
   },
+  5: {
+    nomor: '05',
+    inisial: 'E',
+    nama: 'Friski Denta Davida Putra',
+     jabatan: 'Editor Web',
+    tugas: [
+      'Merancang dan membangun tampilan website portfolio',
+      'Menulis dan merapikan kode HTML, CSS, dan JavaScript',
+      'Memasukkan konten hasil wawancara ke dalam website',
+      'Memastikan website berjalan dengan baik di semua perangkat'
+    ],
+    kontribusi: [
+      'Membangun website portfolio dari awal hingga selesai',
+      'Menambahkan animasi dan efek visual yang menarik',
+      'Mengimplementasikan fitur dark mode dan typing effect',
+      'Melakukan testing dan perbaikan tampilan di berbagai perangkat'
+    ]
+  },
   6: {
     nomor: '06',
     inisial: 'F',
-    nama: 'Nama Anggota 6',
-    jabatan: 'Dokumentasi',
+    nama: 'I Jampe Agung Titah Dewata',
+     jabatan: 'Editor Web',
     tugas: [
-      'Mendokumentasikan kegiatan kelompok secara visual',
-      'Mengambil foto dan video selama proses wawancara',
-      'Mengedit dan memilih foto terbaik untuk portfolio',
-      'Bekerja sama dengan tim editor dalam penyusunan konten visual'
+      'Merancang dan membangun tampilan website portfolio',
+      'Menulis dan merapikan kode HTML, CSS, dan JavaScript',
+      'Memasukkan konten hasil wawancara ke dalam website',
+      'Memastikan website berjalan dengan baik di semua perangkat'
     ],
     kontribusi: [
-      'Mengabadikan momen wawancara dengan Bu Ayu',
-      'Memilih dan menyeleksi foto terbaik untuk ditampilkan',
-      'Mendukung tim editor dengan bahan visual yang berkualitas',
-      'Memastikan dokumentasi kegiatan tersimpan dengan rapi'
+      'Membangun website portfolio dari awal hingga selesai',
+      'Menambahkan animasi dan efek visual yang menarik',
+      'Mengimplementasikan fitur dark mode dan typing effect',
+      'Melakukan testing dan perbaikan tampilan di berbagai perangkat'
     ]
   },
   7: {
     nomor: '07',
     inisial: 'G',
-    nama: 'Nama Anggota 7',
+    nama: 'mohamad dwi Ramadhan',
     jabatan: 'Editor Web',
     tugas: [
       'Merancang dan membangun tampilan website portfolio',

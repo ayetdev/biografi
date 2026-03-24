@@ -9,7 +9,7 @@
 const memberData = {
   1: {
     nomor: '01',
-    inisial: 'A',
+    inisial: 'document.getElementById("foto1").src = "image/foto-profile/profil1.jpg";',
     nama: 'I kadek gery priwana nugraha',
     jabatan: 'Ketua',
     tugas: [
@@ -273,7 +273,7 @@ animateParticles();
 // ── TYPING EFFECT ──
 const phrases = [
   'Pendidik · Inspirator · Pembimbing',
-  'Guru PKn SMK TI',
+  'Guru Pendidikan Pancasila SMK TI',
   '18+ Tahun Mengabdi'
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;

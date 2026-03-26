@@ -621,8 +621,6 @@ nav {
   color: var(--accent);
   letter-spacing: 0.08em;
   white-space: nowrap;
-  
-  transition: opacity 0.2s;
 }
 .org-card:hover::after { opacity: 1; }
 

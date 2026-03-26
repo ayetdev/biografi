@@ -9,7 +9,7 @@
 const memberData = {
   1: {
     nomor: '01',
-    inisial: 'document.getElementById("foto1").src = "image/foto-profile/profil1.jpg";',
+    foto: "image/foto-profile/profil1.jpg",
     nama: 'I kadek gery priwana nugraha',
     jabatan: 'Ketua',
     tugas: [
@@ -146,7 +146,7 @@ function openPopup(id) {
   const m = memberData[id];
   if (!m) return;
 
-  document.getElementById('popupAvatar').textContent   = m.inisial;
+  document.getElementById('popupAvatar').style.backgroundImage = `url(${m.foto})`;
   document.getElementById('popupNumber').textContent   = `Anggota #${m.nomor}`;
   document.getElementById('popupName').textContent     = m.nama;
   document.getElementById('popupRole').textContent     = m.jabatan;

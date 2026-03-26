@@ -28,7 +28,7 @@ const memberData = {
   },
   2: {
     nomor: '02',
-    inisial: 'B',
+    foto: "image/foto-profile/27.Ni Putu Aristyawati.jpg",
     nama: 'Ni Putu Aristyawati',
     jabatan: 'pewawancara',
   tugas: [
@@ -46,7 +46,7 @@ const memberData = {
   },
   3: {
     nomor: '03',
-    inisial: 'C',
+    foto: "image/foto-profile/25.Marvin Sondang Sidabutar.jpg",
     nama: 'Marvin Sondang Sidabutar',
     jabatan: 'Pewawancara',
     tugas: [
@@ -64,7 +64,7 @@ const memberData = {
   },
   4: {
     nomor: '04',
-    inisial: 'D',
+    foto: "image/foto-profile/5.Danadyaksa Arfa M.jpg",
     nama: 'Danadyaksa Arfa Mananta',
     jabatan: 'Dokumentasi',
     tugas: [

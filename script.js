@@ -146,7 +146,9 @@ function openPopup(id) {
   const m = memberData[id];
   if (!m) return;
 
-  document.getElementById('popupAvatar').style.backgroundImage = `url(${m.foto})`;
+ document.getElementById('popupAvatar').innerHTML = `
+  <img src="${m.foto}" alt="${m.nama}">
+`;
   document.getElementById('popupNumber').textContent   = `Anggota #${m.nomor}`;
   document.getElementById('popupName').textContent     = m.nama;
   document.getElementById('popupRole').textContent     = m.jabatan;

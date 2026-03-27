@@ -10,7 +10,7 @@ const memberData = {
   1: {
     nomor: '01',
     foto: "image/foto-profile/profil1.jpg",
-    nama: 'I kadek gery priwana nugraha',
+    nama: 'I kadek gery priwana nugraha (14)',
     jabatan: 'Ketua',
     tugas: [
       'Memimpin dan mengkoordinasi seluruh kegiatan kelompok',
@@ -29,7 +29,7 @@ const memberData = {
   2: {
     nomor: '02',
     foto: "image/foto-profile/27.Ni Putu Aristyawati.jpg",
-    nama: 'Ni Putu Aristyawati',
+    nama: 'Ni Putu Aristyawati (28)',
     jabatan: 'pewawancara',
   tugas: [
       'Melakukan wawancara langsung kepada narasumber (Bu Ayu)',
@@ -47,7 +47,7 @@ const memberData = {
   3: {
     nomor: '03',
     foto: "image/foto-profile/25.Marvin Sondang Sidabutar.jpg",
-    nama: 'Marvin Sondang Sidabutar',
+    nama: 'Marvin Sondang Sidabutar (26)',
     jabatan: 'Pewawancara',
     tugas: [
       'Melakukan wawancara langsung kepada narasumber (Bu Ayu)',
@@ -65,7 +65,7 @@ const memberData = {
   4: {
     nomor: '04',
     foto: "image/foto-profile/5.Danadyaksa Arfa M.jpg",
-    nama: 'Danadyaksa Arfa Mananta',
+    nama: 'Danadyaksa Arfa Mananta (5)',
     jabatan: 'Dokumentasi',
     tugas: [
       'Merekam jalannya wawancara menggunakan perangkat audio/video',
@@ -82,8 +82,8 @@ const memberData = {
   },
   5: {
     nomor: '05',
-    inisial: 'E',
-    nama: 'Friski Denta Davida Putra',
+    foto: "image/foto-profile/7.Friski Denta Davida Putra.jpg",
+    nama: 'Friski Denta Davida Putra (7)',
      jabatan: 'Editor Web',
     tugas: [
       'Merancang dan membangun tampilan website portfolio',
@@ -100,8 +100,8 @@ const memberData = {
   },
   6: {
     nomor: '06',
-    inisial: 'F',
-    nama: 'I Jampe Agung Titah Dewata',
+    foto: "image/foto-profile/12. I Jampe Agung Titah Dewata.jpg",
+     nama: 'I Jampe Agung Titah Dewata (13)',
      jabatan: 'Editor Web',
     tugas: [
       'Merancang dan membangun tampilan website portfolio',
@@ -118,8 +118,8 @@ const memberData = {
   },
   7: {
     nomor: '07',
-    inisial: 'G',
-    nama: 'mohamad dwi Ramadhan',
+    foto: "image/foto-profile/26.mohamad dwi Ramadhan.jpg",
+    nama: 'mohamad dwi Ramadhan (27)',
     jabatan: 'Editor Web',
     tugas: [
       'Merancang dan membangun tampilan website portfolio',

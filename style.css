@@ -915,19 +915,17 @@ footer span { color: var(--accent); }
   letter-spacing: 0.05em;
 }
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
+  justify-content: center;
 }
-
-.gallery-item:last-child:nth-child(odd) {
-  grid-column: 1 / -1;
+.gallery-img-wrap {
+  flex: 1 1 400px;
   max-width: 450px;
-  margin: 0 auto;
 }
-
 .gallery-item { display: flex; flex-direction: column; gap: 0.6rem; }
 .gallery-img-wrap {
   position: relative;

@@ -116,24 +116,6 @@ const memberData = {
       'Melakukan testing dan perbaikan tampilan di berbagai perangkat'
     ]
   },
-  7: {
-    nomor: '07',
-    foto: "image/foto-profile/26.mohamad dwi Ramadhan.jpg",
-    nama: 'mohamad dwi Ramadhan (27)',
-    jabatan: 'Editor Web',
-    tugas: [
-      'Merancang dan membangun tampilan website portfolio',
-      'Menulis dan merapikan kode HTML, CSS, dan JavaScript',
-      'Memasukkan konten hasil wawancara ke dalam website',
-      'Memastikan website berjalan dengan baik di semua perangkat'
-    ],
-    kontribusi: [
-      'Membangun website portfolio dari awal hingga selesai',
-      'Menambahkan animasi dan efek visual yang menarik',
-      'Mengimplementasikan fitur dark mode dan typing effect',
-      'Melakukan testing dan perbaikan tampilan di berbagai perangkat'
-    ]
-  }
 };
 
 // ── POPUP LOGIC ──
@@ -275,7 +257,7 @@ animateParticles();
 // ── TYPING EFFECT ──
 const phrases = [
   'Pendidik · Inspirator · Pembimbing',
-  'Guru Pendidikan Pancasila SMK TI BALI GLOBAL DENPASAR',
+  'Guru Pendidikan Pancasila SMK TI',
   '18+ Tahun Mengabdi'
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;

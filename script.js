@@ -275,7 +275,7 @@ animateParticles();
 // ── TYPING EFFECT ──
 const phrases = [
   'Pendidik · Inspirator · Pembimbing',
-  'Guru Pendidikan Pancasila SMK TI',
+  'Guru Pendidikan Pancasila SMK TI BALI GLOBAL DENPASAR',
   '18+ Tahun Mengabdi'
 ];
 let phraseIdx = 0, charIdx = 0, deleting = false;
